@@ -1,0 +1,7 @@
+{
+  "name": "capitalBull",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

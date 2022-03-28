@@ -1,0 +1,93 @@
+<ion-grid>
+	<ion-row justify-content-center>
+		<ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+			<div text-center>
+        <img src="../../assets/images/logo-icon - Copy.png" class="logo">
+				<span class="logo-text">Fill The Below infomation to Log In</span>
+			</div>
+			<div padding class="reg-form">
+        <span class="form-text">Create Account</span>
+				<!-- <ion-content
+        [scrollEvents]="true"
+        (ionScrollStart)="logScrollStart()"
+        (ionScroll)="logScrolling($event)"
+        (ionScrollEnd)="logScrollEnd()"> -->
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">First name</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Last Name</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Email Id</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Mobile Number</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Date Of Birth</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Account Number</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">Adhar Number</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="reg-form-inputs-user">
+          <ion-label position="floating">PAN Number</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <!-- <div class="create_account" [routerLink]="['/registration']">
+          <img src="../../assets/icon/create_user.png" class="user-account-icon"> 
+          <span class="text-padding">Create account</span>
+        </div>
+
+        <div class="forgot_account" [routerLink]="['/forgot-password']">
+          <span class="text-padding">forgot password ?</span>
+        </div> -->
+
+        <!-- <div class="radio-buttons">
+          <ion-list class="checklist" no-lines>
+            <ion-item no-lines>
+                <input type="checkbox">
+                <label class="ion-text-wrap">Remember me</label>
+            </ion-item>
+        
+            <ion-item no-lines>
+                <input type="checkbox">
+                <label class="ion-text-wrap">I agree to the T&C and Privacy Policy</label>
+            </ion-item>
+          </ion-list>        
+        </div> -->
+        <div class="radio-buttons">
+          <ion-list class="checklist" no-lines>
+            <ion-item no-lines>
+                <input type="checkbox">
+                <label class="ion-text-wrap">I agree to the <span class="tt-color">T&C</span> and <span class="tt-color">Privacy Policy</span></label>
+            </ion-item>  
+            </ion-list>     
+        </div>
+
+        <ion-button size="large" expand="block" class="reg-button">Submit</ion-button>
+
+        <span class="login-button tt-color" [routerLink]="['/login']">Already have an account?</span>
+        <!-- </ion-content> -->
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-grid>

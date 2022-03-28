@@ -1,0 +1,66 @@
+<ion-grid>
+	<ion-row justify-content-center>
+		<ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+			<div text-center>
+        <img src="../../assets/images/logo-icon - Copy.png" class="logo">
+				<span class="logo-text">Fill The Below infomation to Log In</span>
+			</div>
+			<div padding class="login-form">
+        <span class="form-text">Login Account</span>
+				<ion-item class="login-form-inputs-user">
+          <img src="../../assets/icon/user_icon.png" class="user-icon">
+          <ion-input type="text" placeholder="User Name"></ion-input>
+        </ion-item>
+
+				<ion-item class="login-form-inputs-password">
+          <img src="../../assets/icon/password_icon.png" class="user-icon">
+					<ion-input type="password" placeholder="Password"></ion-input>
+          <ion-button slot="end" fill="clear" (click)="showPassword()" class="seeClient">
+            <img src="../../assets/icon/eye.png" class="iconEye">
+          </ion-button>
+				</ion-item>
+
+        <div class="create_account" [routerLink]="['/registration']">
+          <img src="../../assets/icon/create_user.png" class="user-account-icon"> 
+          <span class="text-padding">Create account</span>
+        </div>
+
+        <div class="forgot_account" [routerLink]="['/forgot-password']">
+          <span class="text-padding">forgot password ?</span>
+        </div>
+
+        <div class="radio-buttons">
+          <!-- <ion-list >
+            <ion-item>
+              <ion-label class="label-text" >Remember me</ion-label>
+              <ion-checkbox [(ngModel)]="remember-me"></ion-checkbox>              
+            </ion-item>
+          
+            <ion-item>
+              <ion-label class="label-text" >I agree to the T&C and Privacy Policy</ion-label>
+              <ion-checkbox [(ngModel)]="agree-term"></ion-checkbox>              
+            </ion-item>
+          
+          </ion-list> -->
+
+          <ion-list class="checklist" no-lines>
+            <ion-item no-lines>
+                <input type="checkbox">
+                <label class="ion-text-wrap">Remember me</label>
+            </ion-item>
+        
+            <ion-item no-lines>
+                <input type="checkbox">
+                <label class="ion-text-wrap">I agree to the T&C and Privacy Policy</label>
+            </ion-item>
+          </ion-list>
+        
+        </div>
+			
+				<ion-button size="large" expand="block" class="login-button" [routerLink]="['/tabs']">Login</ion-button>
+
+        
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-grid>
